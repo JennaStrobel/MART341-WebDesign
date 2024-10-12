@@ -1,0 +1,3 @@
+Return to the README.md file you created earlier. Share the aspect of your website you’re most proud of, and explain why. Focus on specific design choices, functionality, or features that stand out. Be sure to engage with this week’s discussion for additional insights and inspiration.
+
+I am most proud of the content of the site. I would like to do more with the formatting and expand more on the content, especially the imagery, but I think it's a great start on making a functional website. I chose a color scheme that reflects the theme and general aesthetic, without clashing with or distracting from the different design styles. I would like to organize and do some more formatting on the word-based content, just so the homepage isn't so overwhelming.
