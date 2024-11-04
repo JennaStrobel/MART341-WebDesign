@@ -1,0 +1,215 @@
+/*reset all defaults*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*add basic styling elements*/
+body {
+    background-color: #3C4A45;
+    font-family: Veranda, sans-serif;
+    font-weight: lighter; 
+    color: #E9E4D4;    
+}
+
+/*add more specific text styling*/
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h1 {
+    font-family: Papyrus, fantasy;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+h3 {
+    font-family: Papyrus, fantasy;
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+/*styling for navigation bar*/
+nav {
+    
+    background-color: #3C4A45;
+    color: #6f9849;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #E9E4D4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*styling for breaks between sections*/
+.break {
+    padding: 40px;
+}
+
+.break-2 {
+    padding: 100px;
+}
+
+
+/*styling for video aka hero image*/
+#hero-video {
+    width: 100%;
+    left: 50%
+}
+
+/*styling for section banners*/
+
+.banner-1 {
+    position: relative;
+    text-align: left;
+    color: #E9E4D4;
+}
+
+
+.banner-text-1 {
+    position: absolute;
+    top: 25%;
+    left: 16px;
+    font-family: Papyrus, fantasy;
+    font-size: 40px;
+    text-align: left;
+}
+
+/*styling for written content*/
+.para-1 {
+    width: 40%;
+    background-color: #974b23;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 30%;
+}
+
+.para-2 {
+    width: 40%;
+    background-color: #974b23;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 30%;
+}
+
+#para-2-header {
+    width: 48%;
+    background-color: rgba(0,0,0,0);
+    color: #E9E4D4;
+    border:solid, 3px, #73675C;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 26%;
+}
+
+#para-3-header {
+    width: 48%;
+    background-color: rgba(0,0,0,0);
+    color: #E9E4D4;
+    border:solid, 3px, #73675C;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 26%;
+}
+
+/*specific styling for elements and principles*/
+
+.para-3 {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+
+#dig-elements {
+    width: 90%;
+    background-color: #974b23;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 45px;
+}
+
+#dig-principles {
+    width: 90%;
+    background-color: #974b23;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 45px;
+}
+
+    /*I think somewhere between the paragraphs and the section banners, the position: absolute command is messing up the layout*/
+
+.hyperlink {
+    color: #E9E4D4;
+}
+
+/*styling for the style guide photos*/
+#style-guide {
+    width: 100%;
+    display: flex 25%;
+    text-align: center;
+}
+
+.style-image {
+    width: 300px;
+    padding: 20px;
+}
+
+/*styling for the quote*/
+
+.banner-2 {
+    background-color: rgba(115, 103, 92, 0.5);
+    width:85%;
+    height: 400px;
+}
+
+#quote {
+    background-color: rgb(115, 103, 92);
+    text-align: center;
+    padding: 80px;
+    width: 65%;
+    position: absolute;
+    font-family: Papyrus, fantasy;
+    font-size: 40px;
+}
+
+
+/*styling for the footer*/
+.footer {
+    
+    background-color: #3C4A45;
+    color: #E9E4D4;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
