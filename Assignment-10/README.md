@@ -29,4 +29,4 @@ Borders
 **used borders around some paragraph headers**
 And more (feel free to experiment!)
 
-It's certainly far from done. I would like to do more, especially with the large blocks of text, but it's too much for jsut one assignment, so I hope to keep refining it over the coming weeks.
+It's certainly far from done. I would like to do more, especially with the large blocks of text, but it's too much for just one assignment, so I hope to keep refining it over the coming weeks.
