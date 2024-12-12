@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="author" content="Jenna Strobel">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Ask Us Anything!</title>
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+
+    <body>
+
+        <!--make navigation bar to other primary pages-->
+        <nav id="nav" class="hyperlink">
+            <ul class="nav-list">
+                <li>&vert;</li>
+                <li><a href="index.html">HOME</a></li>
+                <li>&vert;</li>
+                <li><a href="ffe-masterlist.html">MASTER PROJECT CHECKLIST</a></li>
+                <li>&vert;</li>
+                <!--make dropdown for secondary pages-->
+                <div class="dropdown">
+                <li><a href="#">STYLE GUIDES</a></li>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="midcentury.html">MIDCENTURY MODERN</a></div>
+                        <div class="dropdown-item">COTTAGE</div>
+                        <div class="dropdown-item">BOHO</div>
+                        <div class="dropdown-item">MONTANA MODERN</div>
+                        <div class="dropdown-item">SCANDINAVIAN</div>
+                        <div class="dropdown-item">JAPANDI</div>
+                        <div class="dropdown-item">COASTAL</div>
+                        <div class="dropdown-item">COLOR PALETTES</div>
+                    </div>
+                    <!--ADD LINKS TO PAGES I HAVEN'T MADE YET-->    
+                </div>
+                <li>&vert;</li>
+            </ul>
+    </nav>
+
+    <!--make page title and subtitle-->
+    <div id=home-title class="title">
+        <h1>Contact Us</h1>
+            <div class="title-2">
+            <h2>ASK US ANYTHING!</h2>
+            </div>
+    </div>
+
+    <!--make contact form-->
+    <div class="contact-form">
+        <form action="mailto:jennastrobel0@gmail.com" method="post" id="question-form" class="basic-forms">
+            <div id="contact-name" class="contact-input">
+                Username:   
+                <input type="text" name="username" id="username-input" autofocus />
+            </div>
+
+            <div id="contact-subject" class="contact-input">
+                Subject:
+                <input type="text" name="subject" id="subject-input" />
+            </div>
+
+            <div id="contact-text" class="contact-input">
+                Ask us anything:<br />
+                <textarea name="question" id="question-input" maxlength="500">Enter up to 500 characters</textarea>
+            </div>
+        </form>
+    </div>
+
+    <!--add page footer-->
+    <div class="footer">
+        <ul class="nav-list">
+            <li>&vert;</li>
+            <li>
+                Thank you for your response!
+            </li>
+            <li>&vert;</li>
+            <li></li>
+        </ul>
+    </div>
+
+    </body>

@@ -1,0 +1,564 @@
+/*added as experiment to see if it affected whether it would make the two pages communicate; not at all sure that it's necessary*/
+@import url("../style/fonts.css");
+
+/*reset all defaults*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/*add basic styling elements*/
+body {
+    background-color: #3C4A45;
+    font-family: 'oxygen', sans-serif;
+    color: #E9E4D4;    
+}
+
+/*add general text styling*/
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+/*styling for navigation bar*/
+nav {
+    
+    background-color: #3C4A45;
+    color: #6f9849;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #E9E4D4;
+    font-family: 'oxygen', sans-serif;
+        /*not sure if this font is applying right. import command problem, i think*/
+    text-decoration: none;
+}
+
+.hyperlink {
+    color: #E9E4D4;
+}
+
+/*specific dropdown styling*/
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    margin: 0;
+    margin-top: 0.5em;
+    color: #E9E4D4;
+    background-color: #6f9849;
+    z-index: 1;
+}
+
+.dropdown content a {
+    color: #E9E4D4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+    min-width: 7em;
+}
+
+.dropdown-item a {
+    color: #E9E4D4;
+    text-decoration: none;
+}
+
+.dropdown-item:hover, .dropdown-item:hover a {
+    color: #3C4A45;
+    background-color: #E9E4D4;
+}
+
+/*adding hover effect to navigation links*/
+a:hover {
+    color: #6f9849;
+}
+
+/*title styling*/
+h1 {
+    font-family: 'kanit-italic', sans-serif;
+    font-size: 500%;
+    letter-spacing: .27em;
+}
+
+h2 {
+    font-family: 'kanit-thin', sans-serif;
+    font-size: 140%;
+    letter-spacing: .15em;
+}
+
+.title {
+    padding: 120px 20px 20px 20px;
+    margin: 0px 50px 40px 50px;
+    position: static;
+}
+
+.title-2 {
+    padding: 25px;
+}
+
+/*styling for video aka hero image*/
+.hero {
+    margin: 20px 0px;
+    position: static;
+}
+
+#hero-video {
+    width: 100%;
+    display: auto;
+}
+
+/*styling for section banners*/
+h3 {
+    font-family: 'kanit-thin', sans-serif;
+    font-size: 300%;
+    text-align: left;
+}
+.banner-1 {
+    position: static;
+    text-align: left;
+    color: #E9E4D4;
+}
+.banner-1 h3 {
+    position: relative;
+    top: 2.5em;
+    left: 2em;
+    z-index: 5;
+}
+.banner-1 img {
+    opacity: 0.7;
+}
+
+/*styling for sprucing-up content*/
+.spruce-content {
+    margin: 30px;
+    position: static;
+}
+
+/*styling for intro paragraph*/
+.paragraph-1-block {
+    position: static;
+}
+
+.paragraph-1-block .para-1 {
+    width: 40%;
+    background-color: #4f5c57;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    left: 27%;
+}
+
+.spruce-content #style-guide {
+    position: static;
+    margin: 50px 20px;
+}
+
+/*styling for the style guide photos*/
+#style-guide {
+    width: 100%;
+    display: flex 25%;
+    text-align: center;
+}
+
+.style-image {
+    width: 300px;
+    padding: 20px;
+}
+
+/*styling for shopping content*/
+.shop-content {
+    height: 600px;
+    padding: 40px;
+    margin: 30px;
+    position: static;
+}
+
+/*styling for paragraph 2 header*/
+.shop-content .paragraph-2-header {
+    position: relative;
+    left: 4%;
+}
+
+.paragraph-2-header #para-2-header {
+    width: 60%;
+    padding: 30px;
+    margin: 0px; 
+    position: absolute;
+    left: 14%;
+    border: 8px, outset, #E9E4D4;
+    background-color: #73675C;
+}
+
+.paragraph-2-header #para-2-header p {
+    text-align: center;
+}
+
+/*styling for paragraph 2 text*/
+.shop-content .paragraph-2-block {
+    position: relative;
+    top: 150px;
+}
+
+.shop-content .paragraph-2-block .para-2 {
+    height: 400px;
+    position: static;
+    background-color: #4f5c57;
+    color: #E9E4D4;
+    padding: 30px 30px 10px 30px;
+}
+
+.shop-content .paragraph-2-block .para-2 #home-decor {
+    width: 45%;
+    position: absolute;
+    left: 40px;
+}
+
+.shop-content .paragraph-2-block .para-2 #ff-e {
+    width: 45%;
+    position: absolute;
+    right: 40px;
+}
+
+/*styling for digging-in content*/
+.dig-content {
+    height: 1200px;
+    padding: 40px;
+    margin: 30px;
+    position: static;
+}
+
+/*styling for paragraph 3 header*/
+.dig-content .paragraph-3-header {
+    position: relative;
+    left: 4%;
+}
+
+.paragraph-3-header #para-3-header {
+    width: 60%;
+    padding: 30px;
+    margin: 0px; 
+    position: absolute;
+    left: 14%;
+    border: 8px, outset, #E9E4D4;
+    background-color: #73675C;
+}
+
+.paragraph-2-header #para-2-header p {
+    text-align: center;
+}
+
+
+/*styling for paragraph 3 text*/
+.dig-content .paragraph-3-block {
+    position: relative;
+    top: 150px;
+}
+
+.dig-content .paragraph-3-block .para-3 {
+    height: 850px;
+    position: static;
+    background-color: #4f5c57;
+    color: #E9E4D4;
+    padding: 30px 30px 10px 30px;
+}
+
+.dig-content .paragraph-3-block .para-3 #dig-elements {
+    width: 45%;
+    position: absolute;
+    left: 10px;
+}
+
+.dig-content .paragraph-3-block .para-3 #dig-principles {
+    width: 45%;
+    position: absolute;
+    left: 50%;
+}
+
+/*making elements and principles hidden dropdowns*/
+.dig-item-title {
+    height: 100px;
+}
+
+.dig-item-container {
+    width: 100%;
+    background-color:#6f9849; 
+    color: #E9E4D4; 
+    margin: 20px 0px;
+}
+
+.visible-list-item {
+    padding: 20px;
+    text-align: center;
+    background-color:#6f9849; 
+    color: #E9E4D4;  
+}
+
+.hidden-list-item {
+    display: none;
+    padding: 10px;
+}
+
+.dig-item-container:hover .hidden-list-item {
+    display: block;
+}
+
+/*making element and principle columns*/
+
+#dig-elements {
+    width: 80%;
+    background-color: #4f5c57;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 7%;
+}
+
+#dig-principles {
+    width: 80%;
+    background-color: #4f5c57;
+    color: #E9E4D4;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 7%;
+}
+
+/*styling for the quote*/
+.quote-container {
+    height: 400px;
+    position: static;
+    margin: 0px 250px 100px 0px;
+    border: 1px, solid, rgba(115, 103, 92, 0.5);
+        /*something here makes the inner quote box only center align vertically if I have a border.*/
+    background-color: rgba(115, 103, 92, 0.5);
+}
+
+.quote-container #quote {
+    background-color: rgb(115, 103, 92);
+    text-align: center;
+    padding: 80px;
+    width: 75%;
+    position: relative;
+    margin: 45px 40px 45px 0px;
+}
+
+#quote blockquote {
+    font-family: 'kanit-italic', sans-serif;
+    font-size: 225%;
+}
+
+#david-hicks {
+    font-family: 'kanit-italic', sans-serif;
+    font-size: 75%;
+    text-align: right;
+}
+
+
+/*styling for the footer*/
+.footer {
+    
+    background-color: #3C4A45;
+    color: #E9E4D4;
+    padding: 10px;
+    margin: 70px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.footer ul li a {
+    color: #E9E4D4;
+    font-family: 'oxygen', sans-serif;
+        /*not sure if this font is applying right. import command problem, i think*/
+    text-decoration: none;
+}
+
+/*adding hover effect to links*/
+.footer a:hover {
+    color: #6f9849;
+}
+
+
+
+
+/*additional styling for questions/contact page*/
+.contact-input {
+    margin: 3em;
+    text-align: center;
+}
+
+.contact-input input {
+    width: 16em;
+    background-color: #E9E4D4;
+}
+
+.contact-input textarea {
+    width: 50em;
+    height: 15em;
+    background-color: #E9E4D4;
+}
+
+
+
+/*additional styling for ffe masterlist page*/
+.ffe-table {
+    position: relative;
+}
+
+.ffe-table table {
+    width: 80em; 
+    margin: 4em;
+    padding: 4em;
+    border: 2pt solid #6f9849;
+    text-align: center;
+    position: relative;
+    left: 3%;
+}
+
+.ffe-table th {
+    border-bottom: 1pt solid #6f9849;
+    border-collapse: collapse;
+}
+
+.ffe-table td {
+    border-bottom: 1pt solid #6f9849;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+
+
+/*additional styling for style guide pages*/
+
+.hero-image {
+    position: relative;
+    left: 7%;
+    margin-bottom: 7em;
+}
+
+.guide-content {
+    position: relative;
+}
+
+.guide-header {
+    position: relative;
+    left: 16%;
+    width: 60%;
+    padding: 1.75em;
+    border: 8px, outset, #E9E4D4;
+    background-color: #73675C;
+}
+
+.guide-header p {
+    text-align: center;
+}
+
+.guide-text {
+    margin: 6em 2em;
+    position: relative;
+    width: 75%;
+    background-color: #4f5c57;
+    padding: 4em;
+    left: 5%;
+}
+
+.guide-text p {
+    text-align: center;
+}
+
+.guide-gallery-container {
+    position: relative;
+    width: 90%;
+    margin: 6em .5em;
+    padding: 2em;
+}
+
+.guide-image-right {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+    padding: 2em;
+}
+
+.guide-image-left {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+    padding: 2em;
+}
+
+.guide-image-container {
+    width: 100%;
+    background-color:#6f9849; 
+    color: #E9E4D4; 
+    margin: 20px 0px;
+}
+
+.guide-image img {
+    width: 100%;
+}
+
+.guide-description-hidden {
+    display: none;
+    padding: 10px;
+}
+
+.guide-image-container:hover .guide-description-hidden {
+    display: block;
+}
+
+.guide-color {
+    margin: 3em;
+    text-align: center;
+}
+
+.guide-content a {
+    color: #E9E4D4;
+    font-family: 'oxygen', sans-serif;/
+}
+
+.guide-content a:hover {
+    color: #6f9849;
+}
+
+.guide-color img {
+    width: 8em;
+    padding: .75em;
+}

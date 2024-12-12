@@ -1,0 +1,20 @@
+/*for the ones below, how to reference in style.css? use font name? need to specify w/ font-family somehow?*/
+
+/*setting font for body content*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    font-family: oxygen;
+}
+
+/*setting font for title*/
+@font-face {
+    font-family: kanit-italic;
+    src: url('../fonts/Kanit-ThinItalic.ttf') format('truetype');
+}
+
+/*setting font for title subheading and section banners*/
+@font-face {
+    font-family: kanit-thin;
+    src: url('../fonts/Kanit-Thin.ttf') format('truetype');
+}
